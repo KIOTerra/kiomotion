@@ -23,6 +23,12 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-1">
             <Button 
               variant="ghost" 
+              onClick={() => scrollToSection('about')}
+            >
+              About
+            </Button>
+            <Button 
+              variant="ghost" 
               onClick={() => scrollToSection('production')}
             >
               Production
