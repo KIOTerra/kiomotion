@@ -4,6 +4,7 @@ import About from "@/components/About";
 import ProductionStages from "@/components/ProductionStages";
 import FinalVideo from "@/components/FinalVideo";
 import Contact from "@/components/Contact";
+import ScrollingGifs from "@/components/ScrollingGifs";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <ProductionStages />
       <FinalVideo />
       <Contact />
+      <ScrollingGifs />
     </div>
   );
 };
