@@ -17,7 +17,7 @@ const Navigation = () => {
             onClick={scrollToTop}
             className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent hover:opacity-80 transition-opacity"
           >
-            Motion Design
+            KIO
           </button>
           
           <div className="hidden md:flex items-center space-x-1">
