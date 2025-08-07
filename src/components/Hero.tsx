@@ -28,10 +28,10 @@ const Hero = () => {
             Motion Design
           </h1>
           <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-foreground/90">
-            Creative Project Portfolio
+            Portfólio de Projetos Criativos
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed">
-            Bringing ideas to life through innovative motion graphics and visual storytelling
+            Dando vida às ideias através de motion graphics inovadores e narrativa visual
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -40,7 +40,7 @@ const Hero = () => {
               className="text-lg px-8 py-6 h-auto"
               onClick={() => scrollToSection('production')}
             >
-              View Production Process
+              Ver Processo de Produção
             </Button>
             <Button 
               variant="outline" 
@@ -48,7 +48,7 @@ const Hero = () => {
               className="text-lg px-8 py-6 h-auto"
               onClick={() => scrollToSection('final-video')}
             >
-              Watch Final Video
+              Assistir Vídeo Final
             </Button>
           </div>
         </div>

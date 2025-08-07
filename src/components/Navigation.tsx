@@ -25,25 +25,25 @@ const Navigation = () => {
               variant="ghost" 
               onClick={() => scrollToSection('about')}
             >
-              About
+              Sobre
             </Button>
             <Button 
               variant="ghost" 
               onClick={() => scrollToSection('production')}
             >
-              Production
+              Produção
             </Button>
             <Button 
               variant="ghost" 
               onClick={() => scrollToSection('final-video')}
             >
-              Final Video
+              Vídeo Final
             </Button>
             <Button 
               variant="ghost" 
               onClick={() => scrollToSection('contact')}
             >
-              Contact
+              Contato
             </Button>
           </div>
 
@@ -53,7 +53,7 @@ const Navigation = () => {
               size="sm"
               onClick={() => scrollToSection('contact')}
             >
-              Contact
+              Contato
             </Button>
           </div>
         </div>

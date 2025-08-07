@@ -6,9 +6,9 @@ const FinalVideo = () => {
     <section id="final-video" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Final Video</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Vídeo Final</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            The culmination of our creative process - a stunning motion design piece that brings our vision to life
+            O ápice do nosso processo criativo - uma peça impressionante de motion design que dá vida à nossa visão
           </p>
         </div>
 
@@ -26,12 +26,12 @@ const FinalVideo = () => {
                       <path d="M8 5v14l11-7z"/>
                     </svg>
                   </div>
-                  <h3 className="text-2xl font-semibold mb-4">Video Coming Soon</h3>
+                  <h3 className="text-2xl font-semibold mb-4">Vídeo Em Breve</h3>
                   <p className="text-muted-foreground mb-6">
-                    Our motion design masterpiece is currently in production
+                    Nossa obra-prima de motion design está atualmente em produção
                   </p>
                   <Button variant="outline">
-                    Preview Available Soon
+                    Preview Disponível Em Breve
                   </Button>
                 </div>
               </div>
@@ -40,19 +40,19 @@ const FinalVideo = () => {
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="text-center p-6">
-              <h4 className="text-lg font-semibold mb-2">Duration</h4>
+              <h4 className="text-lg font-semibold mb-2">Duração</h4>
               <p className="text-3xl font-bold text-primary">2:30</p>
-              <p className="text-sm text-muted-foreground">Minutes</p>
+              <p className="text-sm text-muted-foreground">Minutos</p>
             </Card>
             
             <Card className="text-center p-6">
-              <h4 className="text-lg font-semibold mb-2">Resolution</h4>
+              <h4 className="text-lg font-semibold mb-2">Resolução</h4>
               <p className="text-3xl font-bold text-primary">4K</p>
               <p className="text-sm text-muted-foreground">Ultra HD</p>
             </Card>
             
             <Card className="text-center p-6">
-              <h4 className="text-lg font-semibold mb-2">Frame Rate</h4>
+              <h4 className="text-lg font-semibold mb-2">Taxa de Quadros</h4>
               <p className="text-3xl font-bold text-primary">60</p>
               <p className="text-sm text-muted-foreground">FPS</p>
             </Card>

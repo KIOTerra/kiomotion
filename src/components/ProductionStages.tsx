@@ -5,43 +5,43 @@ const ProductionStages = () => {
   const stages = [
     {
       stage: "01",
-      title: "Concept & Planning",
-      description: "Initial brainstorming, storyboarding, and creative direction development",
-      status: "Completed",
-      duration: "2 weeks",
-      deliverables: ["Mood board", "Storyboard", "Style frames", "Timeline"]
+      title: "Conceito & Planejamento",
+      description: "Brainstorming inicial, storyboard e desenvolvimento da direção criativa",
+      status: "Concluído",
+      duration: "2 semanas",
+      deliverables: ["Mood board", "Storyboard", "Style frames", "Cronograma"]
     },
     {
       stage: "02", 
-      title: "Design & Asset Creation",
-      description: "Creating visual assets, illustrations, and design elements",
-      status: "Completed",
-      duration: "3 weeks",
-      deliverables: ["Character designs", "Backgrounds", "UI elements", "Color palette"]
+      title: "Design & Criação de Assets",
+      description: "Criação de assets visuais, ilustrações e elementos de design",
+      status: "Concluído",
+      duration: "3 semanas",
+      deliverables: ["Design de personagens", "Backgrounds", "Elementos UI", "Paleta de cores"]
     },
     {
       stage: "03",
-      title: "Animation Production",
-      description: "Bringing designs to life with motion graphics and animations",
-      status: "In Progress",
-      duration: "4 weeks",
-      deliverables: ["Key animations", "Transitions", "Effects", "Timing"]
+      title: "Produção de Animação",
+      description: "Dando vida aos designs com motion graphics e animações",
+      status: "Em Andamento",
+      duration: "4 semanas",
+      deliverables: ["Animações principais", "Transições", "Efeitos", "Timing"]
     },
     {
       stage: "04",
-      title: "Post-Production",
-      description: "Final compositing, sound design, and quality assurance",
-      status: "Pending",
-      duration: "1 week", 
-      deliverables: ["Final edit", "Sound mix", "Color grading", "Export"]
+      title: "Pós-Produção",
+      description: "Composição final, design de som e garantia de qualidade",
+      status: "Pendente",
+      duration: "1 semana", 
+      deliverables: ["Edição final", "Mix de som", "Color grading", "Exportação"]
     }
   ];
 
   const getStatusColor = (status: string) => {
     switch (status) {
-      case "Completed": return "bg-green-500/10 text-green-700 dark:text-green-400";
-      case "In Progress": return "bg-primary/10 text-primary";
-      case "Pending": return "bg-muted text-muted-foreground";
+      case "Concluído": return "bg-green-500/10 text-green-700 dark:text-green-400";
+      case "Em Andamento": return "bg-primary/10 text-primary";
+      case "Pendente": return "bg-muted text-muted-foreground";
       default: return "bg-muted text-muted-foreground";
     }
   };
@@ -50,9 +50,9 @@ const ProductionStages = () => {
     <section id="production" className="py-20 bg-secondary/20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Production Stages</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Etapas de Produção</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A comprehensive overview of our motion design workflow, from initial concept to final delivery
+            Uma visão abrangente do nosso fluxo de trabalho de motion design, do conceito inicial à entrega final
           </p>
         </div>
 
@@ -77,12 +77,12 @@ const ProductionStages = () => {
               <CardContent>
                 <div className="space-y-4">
                   <div className="flex items-center gap-2">
-                    <span className="font-semibold text-sm">Duration:</span>
+                    <span className="font-semibold text-sm">Duração:</span>
                     <span className="text-muted-foreground">{stage.duration}</span>
                   </div>
                   
                   <div>
-                    <span className="font-semibold text-sm block mb-2">Key Deliverables:</span>
+                    <span className="font-semibold text-sm block mb-2">Principais Entregas:</span>
                     <div className="flex flex-wrap gap-2">
                       {stage.deliverables.map((deliverable, idx) => (
                         <Badge key={idx} variant="secondary" className="text-xs">

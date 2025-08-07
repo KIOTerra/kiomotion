@@ -15,9 +15,9 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-gradient-to-br from-secondary/20 to-primary/10">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Entre em Contato</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to bring your ideas to life? Let's discuss your next motion design project
+            Pronto para dar vida às suas ideias? Vamos discutir seu próximo projeto de motion design
           </p>
         </div>
 
@@ -25,46 +25,46 @@ const Contact = () => {
           <div>
             <Card className="h-full">
               <CardHeader>
-                <CardTitle className="text-2xl">Let's Collaborate</CardTitle>
+                <CardTitle className="text-2xl">Vamos Colaborar</CardTitle>
                 <CardDescription>
-                  Send us a message and we'll get back to you within 24 hours
+                  Envie uma mensagem e responderemos em até 24 horas
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="firstName">First Name</Label>
-                      <Input id="firstName" placeholder="John" required />
+                      <Label htmlFor="firstName">Nome</Label>
+                      <Input id="firstName" placeholder="João" required />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="lastName">Last Name</Label>
-                      <Input id="lastName" placeholder="Doe" required />
+                      <Label htmlFor="lastName">Sobrenome</Label>
+                      <Input id="lastName" placeholder="Silva" required />
                     </div>
                   </div>
                   
                   <div className="space-y-2">
                     <Label htmlFor="email">Email</Label>
-                    <Input id="email" type="email" placeholder="john@example.com" required />
+                    <Input id="email" type="email" placeholder="joao@exemplo.com" required />
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="project">Project Type</Label>
-                    <Input id="project" placeholder="Motion Graphics, Animation, etc." />
+                    <Label htmlFor="project">Tipo de Projeto</Label>
+                    <Input id="project" placeholder="Motion Graphics, Animação, etc." />
                   </div>
                   
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
+                    <Label htmlFor="message">Mensagem</Label>
                     <Textarea 
                       id="message" 
-                      placeholder="Tell us about your project..."
+                      placeholder="Conte-nos sobre seu projeto..."
                       className="min-h-32"
                       required 
                     />
                   </div>
                   
                   <Button type="submit" className="w-full" size="lg">
-                    Send Message
+                    Enviar Mensagem
                   </Button>
                 </form>
               </CardContent>
@@ -84,7 +84,7 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">hello@motiondesign.com</p>
+                <p className="text-muted-foreground">ola@motiondesign.com</p>
               </CardContent>
             </Card>
 
@@ -97,14 +97,14 @@ const Contact = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
-                  Location
+                  Localização
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Creative Studio<br />
-                  Design District<br />
-                  New York, NY
+                  Estúdio Criativo<br />
+                  Distrito de Design<br />
+                  São Paulo, SP
                 </p>
               </CardContent>
             </Card>
@@ -117,13 +117,13 @@ const Contact = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  Response Time
+                  Tempo de Resposta
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  We typically respond within<br />
-                  24 hours on business days
+                  Normalmente respondemos em<br />
+                  até 24 horas em dias úteis
                 </p>
               </CardContent>
             </Card>
