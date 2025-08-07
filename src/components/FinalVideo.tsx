@@ -8,7 +8,7 @@ const FinalVideo = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Vídeo Final</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            O ápice do nosso processo criativo - uma peça impressionante de motion design que dá vida à nossa visão
+            Projeto de Motion Design - Uma narrativa visual envolvente que conecta emoção e movimento
           </p>
         </div>
 
@@ -38,23 +38,40 @@ const FinalVideo = () => {
             </CardContent>
           </Card>
 
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="text-center p-6">
-              <h4 className="text-lg font-semibold mb-2">Duração</h4>
-              <p className="text-3xl font-bold text-primary">2:30</p>
-              <p className="text-sm text-muted-foreground">Minutos</p>
-            </Card>
-            
-            <Card className="text-center p-6">
-              <h4 className="text-lg font-semibold mb-2">Resolução</h4>
-              <p className="text-3xl font-bold text-primary">4K</p>
-              <p className="text-sm text-muted-foreground">Ultra HD</p>
-            </Card>
-            
-            <Card className="text-center p-6">
-              <h4 className="text-lg font-semibold mb-2">Taxa de Quadros</h4>
-              <p className="text-3xl font-bold text-primary">60</p>
-              <p className="text-sm text-muted-foreground">FPS</p>
+          <div className="mt-12">
+            <Card className="p-8">
+              <h3 className="text-2xl font-semibold mb-6 text-center">Descrição do Projeto</h3>
+              <div className="prose prose-lg mx-auto text-foreground/90">
+                <p className="text-lg leading-relaxed">
+                  Este projeto representa a síntese perfeita entre criatividade e técnica. Desenvolvido com foco na narrativa visual, 
+                  cada elemento foi cuidadosamente planejado para criar uma experiência imersiva que conecta o espectador 
+                  com a essência da marca.
+                </p>
+                <p className="text-lg leading-relaxed mt-4">
+                  Utilizando as mais modernas técnicas de motion graphics, o vídeo combina animações fluidas, 
+                  tipografia dinâmica e uma paleta de cores harmoniosa para transmitir a mensagem de forma impactante e memorável.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                <div className="text-center">
+                  <h4 className="text-lg font-semibold mb-2">Duração</h4>
+                  <p className="text-3xl font-bold text-primary">2:30</p>
+                  <p className="text-sm text-muted-foreground">Minutos</p>
+                </div>
+                
+                <div className="text-center">
+                  <h4 className="text-lg font-semibold mb-2">Resolução</h4>
+                  <p className="text-3xl font-bold text-primary">4K</p>
+                  <p className="text-sm text-muted-foreground">Ultra HD</p>
+                </div>
+                
+                <div className="text-center">
+                  <h4 className="text-lg font-semibold mb-2">Taxa de Quadros</h4>
+                  <p className="text-3xl font-bold text-primary">60</p>
+                  <p className="text-sm text-muted-foreground">FPS</p>
+                </div>
+              </div>
             </Card>
           </div>
         </div>
