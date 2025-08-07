@@ -22,8 +22,8 @@ const Navigation = () => {
             <Button variant="ghost" onClick={() => scrollToSection('about')}>
               Minha Jornada
             </Button>
-            <Button variant="ghost" onClick={() => scrollToSection('final-video')}>
-              Vídeo Final
+            <Button variant="ghost" onClick={() => scrollToSection('projects')}>
+              Projetos
             </Button>
             <Button variant="ghost" onClick={() => scrollToSection('contact')}>
               Contato
