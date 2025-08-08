@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import useEmblaCarousel from 'embla-carousel-react';
-import { useCallback } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 const Projects = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -13,6 +14,24 @@ const Projects = () => {
   const scrollNext = useCallback(() => {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
+
+  const scrollTo = useCallback((index: number) => {
+    if (emblaApi) emblaApi.scrollTo(index);
+  }, [emblaApi]);
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    emblaApi.on('select', onSelect);
+    return () => {
+      emblaApi.off('select', onSelect);
+    };
+  }, [emblaApi, onSelect]);
 
   const projects = [
     {
@@ -43,9 +62,42 @@ const Projects = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Projetos</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-12">
             Explore meu portfólio de projetos de motion design e descubra como transformo ideias em experiências visuais memoráveis
           </p>
+          
+          {/* Project Thumbnails */}
+          <div className="flex justify-center gap-6 mb-8">
+            {projects.map((project, index) => (
+              <button
+                key={project.id}
+                onClick={() => scrollTo(index)}
+                className={`relative group transition-all duration-300 ${
+                  selectedIndex === index 
+                    ? 'scale-110 ring-2 ring-primary' 
+                    : 'hover:scale-105 opacity-70 hover:opacity-100'
+                }`}
+              >
+                <div className="w-32 h-20 md:w-40 md:h-24 rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center border-2 border-border">
+                  <div className="text-center">
+                    <div className="w-8 h-8 mx-auto mb-2 rounded-full bg-primary/30 flex items-center justify-center">
+                      <svg 
+                        className="w-4 h-4 text-primary" 
+                        fill="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M8 5v14l11-7z"/>
+                      </svg>
+                    </div>
+                    <p className="text-xs font-medium text-foreground">{project.title.split(' ')[0]}</p>
+                  </div>
+                </div>
+                <div className={`absolute -bottom-2 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full transition-all duration-300 ${
+                  selectedIndex === index ? 'bg-primary' : 'bg-transparent'
+                }`} />
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className="max-w-6xl mx-auto">
