@@ -23,16 +23,16 @@ const Hero = () => {
             className="mx-auto mb-6 w-auto h-32 md:h-40 lg:h-48"
           />
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-20 leading-relaxed">
             Bringing ideas to life through innovative motion graphics and visual storytelling
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="text-lg px-8 py-6 h-auto" onClick={() => scrollToSection('production')}>
-              View Production Process
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+            <Button size="lg" className="text-lg px-8 py-6 h-auto" onClick={() => scrollToSection('projects')}>
+              Portfolio
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto" onClick={() => scrollToSection('final-video')}>
-              Watch Final Video
+            <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto" onClick={() => scrollToSection('about')}>
+              Quem somos?
             </Button>
           </div>
         </div>
