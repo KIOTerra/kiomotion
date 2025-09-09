@@ -16,12 +16,8 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/40 z-10"></div>
       
       <div className="container mx-auto px-6 text-center relative z-20">
-        <div className="max-w-4xl mx-auto">
-          <img 
-            src="/lovable-uploads/98ffaff2-0df3-4712-9a5d-abe9648e0151.png" 
-            alt="KJD Motion - Animando o Futuro" 
-            className="mx-auto mb-6 w-auto h-32 md:h-40 lg:h-48"
-          />
+        <div className="max-w-4xl mx-auto rounded-lg">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-center text-orange-500">MOTION DESIGN</h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed">
             Bringing ideas to life through innovative motion graphics and visual storytelling
