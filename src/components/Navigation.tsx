@@ -16,8 +16,8 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <button onClick={scrollToTop} className="hover:opacity-80 transition-opacity">
             <img 
-              src="/lovable-uploads/e84db58f-36ee-4556-8488-fd840243f0e6.png" 
-              alt="KIO Logo" 
+              src="/lovable-uploads/d06eb3d4-f85d-4a2e-8f95-8adcd6f90b42.png" 
+              alt="JK Logo" 
               className="h-8 w-auto"
             />
           </button>
