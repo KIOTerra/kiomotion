@@ -23,13 +23,13 @@ const Navigation = () => {
           </button>
           
           <div className="hidden md:flex items-center space-x-1">
-            <Button variant="ghost" onClick={() => scrollToSection('about')}>
+            <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20" onClick={() => scrollToSection('about')}>
               Minha Jornada
             </Button>
-            <Button variant="ghost" onClick={() => scrollToSection('projects')}>
+            <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20" onClick={() => scrollToSection('projects')}>
               Projetos
             </Button>
-            <Button variant="ghost" onClick={() => scrollToSection('contact')}>
+            <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20" onClick={() => scrollToSection('contact')}>
               Contato
             </Button>
           </div>
