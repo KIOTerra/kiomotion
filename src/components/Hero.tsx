@@ -17,7 +17,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 text-center relative z-20">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-center text-orange-500">KIO MOTION</h1>
+          <img src="/lovable-uploads/1bf8c2ba-15aa-4e3c-8b6f-106fd5b74b32.png" alt="KIO Motion" className="h-16 md:h-24 mb-6 mx-auto" />
           <h2 className="text-3xl mb-8 text-center text-slate-50 font-extrabold md:text-2xl">correndo com ideias, narrativas e tecnologia para animar o futuro</h2>
           
           
