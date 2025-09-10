@@ -7,10 +7,14 @@ const Hero = () => {
   };
   return <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Video */}
-      <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover z-0">
-        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <iframe 
+        src="https://player.vimeo.com/video/567980408?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;background=1" 
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        frameBorder="0" 
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+        referrerPolicy="strict-origin-when-cross-origin" 
+        title="Ugah e a descoberta do fogo"
+      ></iframe>
       
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-black/40 z-10"></div>
