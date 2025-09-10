@@ -18,7 +18,7 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/194574b1-b1ff-45c6-95e9-ea7002a75fb3.png" 
               alt="Logo" 
-              className="h-12 w-auto"
+              className="h-12 w-auto transition-transform duration-300 hover:rotate-12"
             />
           </button>
           
