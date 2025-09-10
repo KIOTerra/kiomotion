@@ -24,7 +24,7 @@ const Navigation = () => {
           
           <div className="hidden md:flex items-center space-x-1">
             <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20" onClick={() => scrollToSection('about')}>
-              Minha Jornada
+              Sobre nós
             </Button>
             <Button variant="ghost" className="text-white hover:text-white hover:bg-white/20" onClick={() => scrollToSection('projects')}>
               Projetos
