@@ -30,7 +30,7 @@ const Hero = () => {
             <Button variant="hover-rotate" size="lg" className="text-lg px-8 py-6 h-auto" onClick={() => scrollToSection('projects')}>
               Portfolio
             </Button>
-            <Button variant="hover-rotate" size="lg" className="text-lg px-8 py-6 h-auto border-white text-white hover:bg-white hover:text-primary" onClick={() => scrollToSection('about')}>
+            <Button variant="hover-rotate" size="lg" className="text-lg px-8 py-6 h-auto bg-white hover:bg-white/90 transition-transform duration-300 hover:rotate-12" style={{color: '#00497C'}} onClick={() => scrollToSection('about')}>
               Sobre nós
             </Button>
           </div>
