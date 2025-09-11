@@ -27,10 +27,10 @@ const Hero = () => {
           <p className="text-xl mb-20 leading-relaxed md:text-xl text-gray-50">Correndo com narrativas e tecnologia para realizar o impossível</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
-            <Button size="lg" className="text-lg px-8 py-6 h-auto" onClick={() => scrollToSection('projects')}>
+            <Button variant="hover-rotate" size="lg" className="text-lg px-8 py-6 h-auto" onClick={() => scrollToSection('projects')}>
               Portfolio
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6 h-auto" onClick={() => scrollToSection('about')}>
+            <Button variant="hover-rotate" size="lg" className="text-lg px-8 py-6 h-auto border-white text-white hover:bg-white hover:text-primary" onClick={() => scrollToSection('about')}>
               Sobre nós
             </Button>
           </div>
