@@ -15,7 +15,7 @@ const Hero = () => {
     }} frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerPolicy="strict-origin-when-cross-origin" title="Ugah e a descoberta do fogo"></iframe>
       
       {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 z-10 bg-transparent rounded-sm"></div>
+      
       
       <div className="container mx-auto px-6 text-center relative z-20">
         <div className="max-w-4xl mx-auto">
