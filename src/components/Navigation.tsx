@@ -11,8 +11,8 @@ const Navigation = () => {
       behavior: 'smooth'
     });
   };
-  return <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b">
-      <div className="container mx-auto px-6 py-4 rounded-sm" style={{backgroundColor: '#00497C'}}>
+  return <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b w-full">
+      <div className="w-full px-6 py-4" style={{backgroundColor: '#00497C'}}>
         <div className="flex items-center justify-between">
           <button onClick={scrollToTop} className="hover:opacity-80 transition-opacity">
             <img 
