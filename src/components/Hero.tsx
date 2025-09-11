@@ -7,18 +7,15 @@ const Hero = () => {
   };
   return <section className="min-h-screen flex items-center justify-center relative overflow-hidden w-full">
       {/* Background Video */}
-      <iframe 
-        src="https://player.vimeo.com/video/567980408?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;background=1" 
-        className="absolute inset-0 w-screen h-full object-cover z-0"
-        style={{ width: '100vw', height: '100vh', left: '50%', transform: 'translateX(-50%)' }}
-        frameBorder="0" 
-        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-        referrerPolicy="strict-origin-when-cross-origin" 
-        title="Ugah e a descoberta do fogo"
-      ></iframe>
+      <iframe src="https://player.vimeo.com/video/567980408?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;background=1" className="absolute inset-0 w-screen h-full object-cover z-0" style={{
+      width: '100vw',
+      height: '100vh',
+      left: '50%',
+      transform: 'translateX(-50%)'
+    }} frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerPolicy="strict-origin-when-cross-origin" title="Ugah e a descoberta do fogo"></iframe>
       
       {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/40 z-10"></div>
+      <div className="absolute inset-0 z-10 bg-transparent rounded-sm"></div>
       
       <div className="container mx-auto px-6 text-center relative z-20">
         <div className="max-w-4xl mx-auto">
@@ -30,7 +27,9 @@ const Hero = () => {
             <Button variant="hover-rotate" size="lg" className="text-lg px-8 py-6 h-auto" onClick={() => scrollToSection('projects')}>
               Portfolio
             </Button>
-            <Button variant="hover-rotate" size="lg" className="text-lg px-8 py-6 h-auto bg-white hover:bg-white/90 transition-transform duration-300 hover:rotate-12" style={{color: '#00497C'}} onClick={() => scrollToSection('about')}>
+            <Button variant="hover-rotate" size="lg" className="text-lg px-8 py-6 h-auto bg-white hover:bg-white/90 transition-transform duration-300 hover:rotate-12" style={{
+            color: '#00497C'
+          }} onClick={() => scrollToSection('about')}>
               Sobre nós
             </Button>
           </div>
