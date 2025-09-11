@@ -54,6 +54,34 @@ const Projects = () => {
       description: "Vídeo explicativo sobre sustentabilidade corporativa. Combinação de motion graphics, ilustrações customizadas e narração envolvente para comunicar conceitos complexos de forma simples.",
       specs: { duration: "3:15", resolution: "4K", fps: "24" },
       status: "Finalizado"
+    },
+    {
+      id: 4,
+      title: "Animação 3D Produto",
+      description: "Apresentação tridimensional de produto inovador com foco em detalhes técnicos. Modelagem, iluminação e animação realista que destaca as funcionalidades e benefícios do produto.",
+      specs: { duration: "2:45", resolution: "4K", fps: "30" },
+      status: "Concluído"
+    },
+    {
+      id: 5,
+      title: "Video Musical Conceitual",
+      description: "Clipe musical com estética experimental e narrativa visual poética. Fusão de técnicas tradicionais e digitais para criar uma experiência audiovisual única e memorável.",
+      specs: { duration: "4:20", resolution: "4K", fps: "24" },
+      status: "Finalizado"
+    },
+    {
+      id: 6,
+      title: "Apresentação Institucional",
+      description: "Vídeo corporativo para lançamento de nova filial. Combinação de filmagem real com elementos gráficos animados, criando uma narrativa envolvente sobre a expansão da empresa.",
+      specs: { duration: "3:50", resolution: "4K", fps: "25" },
+      status: "Em andamento"
+    },
+    {
+      id: 7,
+      title: "Short Form Content",
+      description: "Série de vídeos verticais para TikTok e Instagram Reels. Conteúdo dinâmico com transições rápidas, efeitos visuais impactantes e storytelling adaptado para formato mobile.",
+      specs: { duration: "0:45", resolution: "Full HD", fps: "60" },
+      status: "Concluído"
     }
   ];
 
