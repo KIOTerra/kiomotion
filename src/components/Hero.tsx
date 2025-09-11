@@ -7,11 +7,13 @@ const Hero = () => {
   };
   return <section className="min-h-screen flex items-center justify-center relative overflow-hidden w-full">
       {/* Background Video */}
-      <iframe src="https://player.vimeo.com/video/567980408?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;background=1" className="absolute top-0 left-0 w-full h-full object-cover z-0" style={{
-      width: '100%',
-      height: '100%',
-      minWidth: '100vw',
-      minHeight: '100vh'
+      <iframe src="https://player.vimeo.com/video/567980408?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;background=1" className="absolute z-0" style={{
+      width: '120vw',
+      height: '120vh',
+      left: '-10vw',
+      top: '-10vh',
+      objectFit: 'cover',
+      transform: 'scale(1.1)'
     }} frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerPolicy="strict-origin-when-cross-origin" title="Ugah e a descoberta do fogo"></iframe>
       
       {/* Dark overlay for better text readability */}
