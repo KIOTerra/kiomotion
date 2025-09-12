@@ -7,14 +7,14 @@ const Hero = () => {
   };
   return <section className="min-h-screen flex items-center justify-center relative overflow-hidden w-full">
       {/* Background Video */}
-      <iframe src="https://player.vimeo.com/video/1118229640?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;background=1" className="absolute z-0" style={{
+      <iframe src="https://www.youtube.com/embed/ZJLrQwAKZYM?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playlist=ZJLrQwAKZYM" className="absolute z-0" style={{
       width: '120vw',
       height: '120vh',
       left: '-10vw',
       top: '-10vh',
       objectFit: 'cover',
       transform: 'scale(1.1)'
-    }} frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerPolicy="strict-origin-when-cross-origin" title="Ugah e a descoberta do fogo"></iframe>
+    }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen title="YouTube video player"></iframe>
       
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 z-10 bg-transparent rounded-sm"></div>
