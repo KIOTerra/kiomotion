@@ -21,7 +21,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 text-center relative z-20">
         <div className="max-w-4xl mx-auto">
-          <img src="/lovable-uploads/c21fd0f7-f8de-4bf7-8bac-83582c55943f.png" alt="KJD Motion - Animando o Futuro" className="mx-auto mb-6 w-auto h-32 md:h-40 lg:h-48" />
+          <img src="/lovable-uploads/Logo_total_2_alpha.png" alt="KIO Motion - Animando o Futuro" className="mx-auto mb-6 w-auto h-32 md:h-40 lg:h-48" />
           
           <p className="text-xl mb-20 leading-relaxed md:text-xl text-gray-50">Correndo com narrativas e tecnologia para realizar o impossível</p>
           
