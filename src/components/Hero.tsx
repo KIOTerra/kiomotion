@@ -8,14 +8,13 @@ const Hero = () => {
   return <section className="min-h-screen flex items-center justify-center relative overflow-hidden w-full">
       {/* Background Video */}
       <video 
-        className="absolute z-0 w-full h-full object-cover" 
+        className="absolute inset-0 z-0 w-full h-full object-cover" 
         style={{
-          width: '120vw',
-          height: '120vh',
-          left: '-10vw',
-          top: '-10vh',
-          objectFit: 'cover',
-          transform: 'scale(1.1)'
+          width: '100vw',
+          height: '100vh',
+          minWidth: '100%',
+          minHeight: '100%',
+          objectFit: 'cover'
         }}
         autoPlay 
         muted 
