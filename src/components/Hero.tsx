@@ -5,13 +5,14 @@ const Hero = () => {
       behavior: 'smooth'
     });
   };
-  return <section className="min-h-screen flex items-center justify-center relative overflow-hidden w-full">
+  return <section className="h-screen flex items-center justify-center relative overflow-hidden w-full"
+    style={{ height: '120vh' }}>
       {/* Background Video */}
       <video 
         className="absolute inset-0 z-0 w-full h-full object-cover" 
         style={{
           width: '100vw',
-          height: '100vh',
+          height: '120vh',
           minWidth: '100%',
           minHeight: '100%',
           objectFit: 'cover'
