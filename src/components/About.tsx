@@ -5,7 +5,7 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-primary">  Eu & Você</h2>
           
           <div className="prose prose-lg mx-auto text-foreground/90 leading-relaxed">
-            <p className="text-xl mb-6">Aqui é o ponto de partida: bem-vindo ao lugar onde suas ideias se movem</p>
+            <p className="mb-6 text-xl text-gray-900">Aqui é o ponto de partida: bem-vindo ao lugar onde suas ideias se movem</p>
             
             <div className="grid md:grid-cols-2 gap-8 mt-12 text-left">
               <div className="bg-card/50 backdrop-blur-sm p-6 rounded-lg border border-border/50">
