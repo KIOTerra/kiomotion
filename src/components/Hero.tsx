@@ -7,14 +7,25 @@ const Hero = () => {
   };
   return <section className="min-h-screen flex items-center justify-center relative overflow-hidden w-full">
       {/* Background Video */}
-      <iframe src="https://www.youtube.com/embed/ZJLrQwAKZYM?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playlist=ZJLrQwAKZYM" className="absolute z-0" style={{
-      width: '120vw',
-      height: '120vh',
-      left: '-10vw',
-      top: '-10vh',
-      objectFit: 'cover',
-      transform: 'scale(1.1)'
-    }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen title="YouTube video player"></iframe>
+      <video 
+        className="absolute z-0 w-full h-full object-cover" 
+        style={{
+          width: '120vw',
+          height: '120vh',
+          left: '-10vw',
+          top: '-10vh',
+          objectFit: 'cover',
+          transform: 'scale(1.1)'
+        }}
+        autoPlay 
+        muted 
+        loop 
+        playsInline
+        preload="auto"
+      >
+        <source src="/lovable-uploads/REEL_v2_site.mp4" type="video/mp4" />
+        Seu navegador não suporta a tag de vídeo.
+      </video>
       
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 z-10 bg-transparent rounded-sm"></div>
