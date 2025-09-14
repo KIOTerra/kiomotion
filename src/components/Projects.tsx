@@ -105,16 +105,16 @@ const Projects = () => {
     status: "Concluído"
   }];
   return <section id="projects" className="py-20 bg-background">
-      <div className="container mx-auto px-6">
+      <div className="container py-0 my-0 mx-0 px-0">
         <div className="text-center mb-16 my-0 px-0">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">Projetos</h2>
           <p className="max-w-3xl mx-auto mb-12 px-0 text-xl text-center font-normal my-[30px] text-gray-900">Dê uma olhada nos meus projetos e descubra como podemos transformar ideias em visuais memoráveis juntos.</p>
           
           {/* Project Thumbnails Carousel */}
           <div className="max-w-5xl mx-auto mb-8">
-            <div className="overflow-hidden cursor-grab active:cursor-grabbing" ref={thumbnailsRef}>
+            <div ref={thumbnailsRef} className="overflow-hidden cursor-grab active:cursor-grabbing px-[47px]">
               <div className="flex gap-3 md:gap-4 px-0 bg-[#000a00]/0 rounded-sm mx-0">
-                {projects.map((project, index) => <div key={project.id} className="flex-[0_0_auto]">
+                {projects.map((project, index) => <div key={project.id} className="flex-[0_0_auto] py-0 px-[55px]">
                     <button onClick={() => scrollTo(index)} className={`relative group transition-all duration-300 ${selectedIndex === index ? 'scale-110 ring-2 ring-primary' : 'hover:scale-105 opacity-70 hover:opacity-100'}`}>
                       <div className="w-20 h-14 md:w-28 md:h-18 rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center border-2 border-border px-[79px] py-0">
                         <div className="text-center">
