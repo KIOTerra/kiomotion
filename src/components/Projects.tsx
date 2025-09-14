@@ -6,22 +6,18 @@ const Projects = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true
   });
+  const [thumbnailsRef, thumbnailsApi] = useEmblaCarousel({
+    align: 'center',
+    containScroll: 'trimSnaps',
+    dragFree: true
+  });
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [thumbnailStartIndex, setThumbnailStartIndex] = useState(0);
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
   }, [emblaApi]);
   const scrollNext = useCallback(() => {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
-  
-  const scrollThumbnailsPrev = useCallback(() => {
-    setThumbnailStartIndex(prev => Math.max(0, prev - 3));
-  }, []);
-  
-  const scrollThumbnailsNext = useCallback(() => {
-    setThumbnailStartIndex(prev => prev + 3);
-  }, []);
   
   const scrollTo = useCallback((index: number) => {
     if (emblaApi) emblaApi.scrollTo(index);
@@ -115,55 +111,32 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">Projetos</h2>
           <p className="max-w-3xl mx-auto mb-12 px-0 text-xl text-center font-normal my-[30px] text-gray-900">Dê uma olhada nos meus projetos e descubra como podemos transformar ideias em visuais memoráveis juntos.</p>
           
-          {/* Project Thumbnails */}
-          <div className="relative flex items-center justify-center mb-8">
-            {/* Seta esquerda para thumbnails */}
-            <button 
-              onClick={scrollThumbnailsPrev}
-              disabled={thumbnailStartIndex === 0}
-              className="absolute left-0 z-10 w-10 h-10 rounded-full bg-background/80 backdrop-blur-sm border border-border hover:bg-background transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              <svg className="w-5 h-5 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            
-            {/* Container das thumbnails */}
-            <div className="flex justify-center gap-4 md:gap-6 mx-12">
-              {projects.slice(thumbnailStartIndex, thumbnailStartIndex + 3).map((project, index) => {
-                const actualIndex = thumbnailStartIndex + index;
-                return (
-                  <button 
-                    key={project.id} 
-                    onClick={() => scrollTo(actualIndex)} 
-                    className={`relative group transition-all duration-300 ${selectedIndex === actualIndex ? 'scale-110 ring-2 ring-primary' : 'hover:scale-105 opacity-70 hover:opacity-100'}`}
-                  >
-                    <div className="w-24 h-16 md:w-32 md:h-20 rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center border-2 border-border">
-                      <div className="text-center">
-                        <div className="w-6 h-6 md:w-8 md:h-8 mx-auto mb-1 md:mb-2 rounded-full bg-primary/30 flex items-center justify-center">
-                          <svg className="w-3 h-3 md:w-4 md:h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z" />
-                          </svg>
+          {/* Project Thumbnails Carousel */}
+          <div className="max-w-4xl mx-auto mb-8">
+            <div className="overflow-hidden" ref={thumbnailsRef}>
+              <div className="flex gap-4 md:gap-6">
+                {projects.map((project, index) => (
+                  <div key={project.id} className="flex-[0_0_auto]">
+                    <button 
+                      onClick={() => scrollTo(index)} 
+                      className={`relative group transition-all duration-300 ${selectedIndex === index ? 'scale-110 ring-2 ring-primary' : 'hover:scale-105 opacity-70 hover:opacity-100'}`}
+                    >
+                      <div className="w-24 h-16 md:w-32 md:h-20 rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center border-2 border-border">
+                        <div className="text-center">
+                          <div className="w-6 h-6 md:w-8 md:h-8 mx-auto mb-1 md:mb-2 rounded-full bg-primary/30 flex items-center justify-center">
+                            <svg className="w-3 h-3 md:w-4 md:h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                              <path d="M8 5v14l11-7z" />
+                            </svg>
+                          </div>
+                          <p className="text-xs font-medium text-foreground">{project.title.split(' ')[0]}</p>
                         </div>
-                        <p className="text-xs font-medium text-foreground">{project.title.split(' ')[0]}</p>
                       </div>
-                    </div>
-                    <div className={`absolute -bottom-2 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full transition-all duration-300 ${selectedIndex === actualIndex ? 'bg-primary' : 'bg-transparent'}`} />
-                  </button>
-                );
-              })}
+                      <div className={`absolute -bottom-2 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full transition-all duration-300 ${selectedIndex === index ? 'bg-primary' : 'bg-transparent'}`} />
+                    </button>
+                  </div>
+                ))}
+              </div>
             </div>
-            
-            {/* Seta direita para thumbnails */}
-            <button 
-              onClick={scrollThumbnailsNext}
-              disabled={thumbnailStartIndex + 3 >= projects.length}
-              className="absolute right-0 z-10 w-10 h-10 rounded-full bg-background/80 backdrop-blur-sm border border-border hover:bg-background transition-colors flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              <svg className="w-5 h-5 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
           </div>
         </div>
 
