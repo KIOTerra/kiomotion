@@ -115,15 +115,15 @@ const Projects = () => {
             <div className="overflow-hidden cursor-grab active:cursor-grabbing" ref={thumbnailsRef}>
               <div className="flex gap-3 md:gap-4 px-0 bg-[#000a00]/0 rounded-sm mx-0">
                 {projects.map((project, index) => <div key={project.id} className="flex-[0_0_auto]">
-                    <button onClick={() => scrollTo(index)} className={`relative group transition-all duration-300 ${selectedIndex === index ? 'scale-110 ring-2 ring-primary' : 'hover:scale-105 opacity-70 hover:opacity-100'}`}>
-                      <div className="w-20 h-14 md:w-28 md:h-18 rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center border-2 border-border px-[79px] py-0">
+                    <button onClick={() => scrollTo(index)} className={`relative group transition-all duration-300 ${selectedIndex === index ? 'scale-110' : 'hover:scale-105 opacity-70 hover:opacity-100'}`}>
+                      <div className={`w-20 h-14 md:w-28 md:h-18 rounded-lg overflow-hidden flex items-center justify-center border-2 transition-all duration-300 ${selectedIndex === index ? 'bg-primary border-primary' : 'bg-gradient-to-br from-primary/20 to-secondary/20 border-border'}`}>
                         <div className="text-center">
-                          <div className="w-5 h-5 md:w-7 md:h-7 mx-auto mb-1 rounded-full bg-primary/30 flex items-center justify-center">
-                            <svg className="w-3 h-3 md:w-4 md:h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                          <div className={`w-5 h-5 md:w-7 md:h-7 mx-auto mb-1 rounded-full flex items-center justify-center transition-all duration-300 ${selectedIndex === index ? 'bg-white/20' : 'bg-primary/30'}`}>
+                            <svg className={`w-3 h-3 md:w-4 md:h-4 transition-all duration-300 ${selectedIndex === index ? 'text-white' : 'text-primary'}`} fill="currentColor" viewBox="0 0 24 24">
                               <path d="M8 5v14l11-7z" />
                             </svg>
                           </div>
-                          <p className="text-xs font-medium text-foreground truncate max-w-16 px-0">{project.title.split(' ')[0]}</p>
+                          <p className={`text-xs font-medium truncate max-w-16 px-0 transition-all duration-300 ${selectedIndex === index ? 'text-white' : 'text-foreground'}`}>{project.title.split(' ')[0]}</p>
                         </div>
                       </div>
                       <div className={`absolute -bottom-2 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full transition-all duration-300 ${selectedIndex === index ? 'bg-primary' : 'bg-transparent'}`} />
