@@ -112,23 +112,23 @@ const Projects = () => {
           <p className="max-w-3xl mx-auto mb-12 px-0 text-xl text-center font-normal my-[30px] text-gray-900">Dê uma olhada nos meus projetos e descubra como podemos transformar ideias em visuais memoráveis juntos.</p>
           
           {/* Project Thumbnails Carousel */}
-          <div className="max-w-4xl mx-auto mb-8">
-            <div className="overflow-hidden" ref={thumbnailsRef}>
-              <div className="flex gap-4 md:gap-6">
+          <div className="max-w-5xl mx-auto mb-8">
+            <div className="overflow-hidden cursor-grab active:cursor-grabbing" ref={thumbnailsRef}>
+              <div className="flex gap-3 md:gap-4 px-4">
                 {projects.map((project, index) => (
                   <div key={project.id} className="flex-[0_0_auto]">
                     <button 
                       onClick={() => scrollTo(index)} 
                       className={`relative group transition-all duration-300 ${selectedIndex === index ? 'scale-110 ring-2 ring-primary' : 'hover:scale-105 opacity-70 hover:opacity-100'}`}
                     >
-                      <div className="w-24 h-16 md:w-32 md:h-20 rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center border-2 border-border">
+                      <div className="w-20 h-14 md:w-28 md:h-18 rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center border-2 border-border">
                         <div className="text-center">
-                          <div className="w-6 h-6 md:w-8 md:h-8 mx-auto mb-1 md:mb-2 rounded-full bg-primary/30 flex items-center justify-center">
+                          <div className="w-5 h-5 md:w-7 md:h-7 mx-auto mb-1 rounded-full bg-primary/30 flex items-center justify-center">
                             <svg className="w-3 h-3 md:w-4 md:h-4 text-primary" fill="currentColor" viewBox="0 0 24 24">
                               <path d="M8 5v14l11-7z" />
                             </svg>
                           </div>
-                          <p className="text-xs font-medium text-foreground">{project.title.split(' ')[0]}</p>
+                          <p className="text-xs font-medium text-foreground truncate max-w-16">{project.title.split(' ')[0]}</p>
                         </div>
                       </div>
                       <div className={`absolute -bottom-2 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full transition-all duration-300 ${selectedIndex === index ? 'bg-primary' : 'bg-transparent'}`} />
