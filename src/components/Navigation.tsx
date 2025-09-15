@@ -34,9 +34,15 @@ const Navigation = () => {
             </Button>
           </div>
 
-          <div className="md:hidden">
-            <Button variant="outline" size="sm" onClick={() => scrollToSection('contact')}>
-              Contact
+          <div className="md:hidden flex items-center justify-center space-x-2 flex-1">
+            <Button variant="ghost" size="sm" className="text-white hover:text-white hover:bg-white/20" onClick={() => scrollToSection('about')}>
+              Sobre
+            </Button>
+            <Button variant="ghost" size="sm" className="text-white hover:text-white hover:bg-white/20" onClick={() => scrollToSection('projects')}>
+              Projetos
+            </Button>
+            <Button variant="ghost" size="sm" className="text-white hover:text-white hover:bg-white/20" onClick={() => scrollToSection('contact')}>
+              Contato
             </Button>
           </div>
         </div>
