@@ -169,23 +169,17 @@ const Projects = () => {
                           </p>
                         </div>
                         
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                           <div className="text-center">
-                            <h4 className="text-lg font-semibold mb-2">Duração</h4>
-                            <p className="text-3xl font-bold text-primary">{project.specs.duration}</p>
-                            <p className="text-sm text-muted-foreground">Minutos</p>
+                            <h4 className="text-lg font-semibold mb-2">Design</h4>
+                            <p className="text-3xl font-bold text-primary">Motion</p>
+                            <p className="text-sm text-muted-foreground">Graphics</p>
                           </div>
                           
                           <div className="text-center">
-                            <h4 className="text-lg font-semibold mb-2">Resolução</h4>
-                            <p className="text-3xl font-bold text-primary">{project.specs.resolution}</p>
-                            <p className="text-sm text-muted-foreground">Ultra HD</p>
-                          </div>
-                          
-                          <div className="text-center">
-                            <h4 className="text-lg font-semibold mb-2">Taxa de Quadros</h4>
-                            <p className="text-3xl font-bold text-primary">{project.specs.fps}</p>
-                            <p className="text-sm text-muted-foreground">FPS</p>
+                            <h4 className="text-lg font-semibold mb-2">Animação</h4>
+                            <p className="text-3xl font-bold text-primary">2D/3D</p>
+                            <p className="text-sm text-muted-foreground">Híbrida</p>
                           </div>
                         </div>
                       </Card>
