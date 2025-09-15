@@ -111,17 +111,17 @@ const Projects = () => {
           <p className="max-w-3xl mx-auto mb-12 px-0 text-xl text-center font-normal my-[30px] text-gray-900">Dê uma olhada nos meus projetos e descubra como podemos transformar ideias em visuais memoráveis juntos.</p>
           
           {/* Project Thumbnails Carousel */}
-          <div className="max-w-5xl mx-auto mb-8">
-            <div className="overflow-hidden cursor-grab active:cursor-grabbing" ref={thumbnailsRef}>
-              <div className="flex gap-3 md:gap-4 px-0 bg-[#000a00]/0 rounded-sm mx-0">
+          <div className="max-w-5xl mx-auto mb-12">
+            <div className="overflow-hidden cursor-grab active:cursor-grabbing py-4" ref={thumbnailsRef}>
+              <div className="flex gap-6 md:gap-8 px-4 bg-[#000a00]/0 rounded-sm mx-0">
                 {projects.map((project, index) => <div key={project.id} className="flex-[0_0_auto]">
-                    <button onClick={() => scrollTo(index)} className={`flex flex-col items-center gap-2 group transition-all duration-300 ${selectedIndex === index ? 'scale-110' : 'hover:scale-105 opacity-70 hover:opacity-100'}`}>
-                      <div className={`w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden flex items-center justify-center border-2 transition-all duration-300 ${selectedIndex === index ? 'bg-primary border-primary' : 'bg-gradient-to-br from-primary/20 to-secondary/20 border-border'}`}>
-                        <svg className={`w-6 h-6 md:w-8 md:h-8 transition-all duration-300 ${selectedIndex === index ? 'text-white' : 'text-primary'}`} fill="currentColor" viewBox="0 0 24 24">
+                    <button onClick={() => scrollTo(index)} className={`flex flex-col items-center gap-3 group transition-all duration-300 ${selectedIndex === index ? 'scale-110' : 'hover:scale-105 opacity-70 hover:opacity-100'}`}>
+                      <div className={`w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden flex items-center justify-center border-2 transition-all duration-300 ${selectedIndex === index ? 'bg-primary border-primary' : 'bg-gradient-to-br from-primary/20 to-secondary/20 border-border'}`}>
+                        <svg className={`w-8 h-8 md:w-10 md:h-10 transition-all duration-300 ${selectedIndex === index ? 'text-white' : 'text-primary'}`} fill="currentColor" viewBox="0 0 24 24">
                           <path d="M8 5v14l11-7z" />
                         </svg>
                       </div>
-                      <p className={`text-xs font-medium text-center max-w-20 transition-all duration-300 ${selectedIndex === index ? 'text-primary' : 'text-foreground'}`}>{project.title.split(' ')[0]}</p>
+                      <p className={`text-sm font-medium text-center max-w-24 leading-tight transition-all duration-300 ${selectedIndex === index ? 'text-primary' : 'text-foreground'}`}>{project.title.split(' ')[0]}</p>
                     </button>
                   </div>)}
               </div>
