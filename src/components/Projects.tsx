@@ -35,8 +35,11 @@ const Projects = () => {
   }, [emblaApi, onSelect]);
   const projects = [{
     id: 1,
-    title: "Motion Branding Corporativo",
+    title: "Unimed",
     description: "Identidade visual em movimento para empresa de tecnologia. Desenvolvimento de logo animado, paleta de cores dinâmica e elementos gráficos que transmitem inovação e modernidade.",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/SdPs50SSMQ8?si=HIHqZIZcQKTmEYba" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    projectTitle: "Explainer corporativo Unimed 2025",
+    responsibility: "Direção de arte, design e animação",
     specs: {
       duration: "2:30",
       resolution: "4K",
@@ -47,6 +50,7 @@ const Projects = () => {
     id: 2,
     title: "Campanha Digital Interativa",
     description: "Série de animações para redes sociais focadas em engajamento. Criação de templates modulares, transições suaves e elementos interativos que aumentaram o alcance em 300%.",
+    responsibility: "Direção de arte e animação",
     specs: {
       duration: "1:45",
       resolution: "4K",
@@ -57,6 +61,7 @@ const Projects = () => {
     id: 3,
     title: "Explainer Video Educacional",
     description: "Vídeo explicativo sobre sustentabilidade corporativa. Combinação de motion graphics, ilustrações customizadas e narração envolvente para comunicar conceitos complexos de forma simples.",
+    responsibility: "Direção de arte e animação",
     specs: {
       duration: "3:15",
       resolution: "4K",
@@ -67,6 +72,7 @@ const Projects = () => {
     id: 4,
     title: "Animação 3D Produto",
     description: "Apresentação tridimensional de produto inovador com foco em detalhes técnicos. Modelagem, iluminação e animação realista que destaca as funcionalidades e benefícios do produto.",
+    responsibility: "Direção de arte e animação",
     specs: {
       duration: "2:45",
       resolution: "4K",
@@ -77,6 +83,7 @@ const Projects = () => {
     id: 5,
     title: "Video Musical Conceitual",
     description: "Clipe musical com estética experimental e narrativa visual poética. Fusão de técnicas tradicionais e digitais para criar uma experiência audiovisual única e memorável.",
+    responsibility: "Direção de arte e animação",
     specs: {
       duration: "4:20",
       resolution: "4K",
@@ -87,6 +94,7 @@ const Projects = () => {
     id: 6,
     title: "Apresentação Institucional",
     description: "Vídeo corporativo para lançamento de nova filial. Combinação de filmagem real com elementos gráficos animados, criando uma narrativa envolvente sobre a expansão da empresa.",
+    responsibility: "Direção de arte e animação",
     specs: {
       duration: "3:50",
       resolution: "4K",
@@ -97,12 +105,57 @@ const Projects = () => {
     id: 7,
     title: "Short Form Content",
     description: "Série de vídeos verticais para TikTok e Instagram Reels. Conteúdo dinâmico com transições rápidas, efeitos visuais impactantes e storytelling adaptado para formato mobile.",
+    responsibility: "Direção de arte e animação",
     specs: {
       duration: "0:45",
       resolution: "Full HD",
       fps: "60"
     },
     status: "Concluído"
+  }, {
+    id: 8,
+    title: "Projeto 8",
+    description: "Descrição do projeto 8 será adicionada em breve.",
+    responsibility: "Direção de arte e animação",
+    specs: {
+      duration: "2:00",
+      resolution: "4K",
+      fps: "30"
+    },
+    status: "Em breve"
+  }, {
+    id: 9,
+    title: "Projeto 9",
+    description: "Descrição do projeto 9 será adicionada em breve.",
+    responsibility: "Direção de arte e animação",
+    specs: {
+      duration: "2:00",
+      resolution: "4K",
+      fps: "30"
+    },
+    status: "Em breve"
+  }, {
+    id: 10,
+    title: "Projeto 10",
+    description: "Descrição do projeto 10 será adicionada em breve.",
+    responsibility: "Direção de arte e animação",
+    specs: {
+      duration: "2:00",
+      resolution: "4K",
+      fps: "30"
+    },
+    status: "Em breve"
+  }, {
+    id: 11,
+    title: "Projeto 11",
+    description: "Descrição do projeto 11 será adicionada em breve.",
+    responsibility: "Direção de arte e animação",
+    specs: {
+      duration: "2:00",
+      resolution: "4K",
+      fps: "30"
+    },
+    status: "Em breve"
   }];
   return <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-6">
@@ -137,44 +190,44 @@ const Projects = () => {
                     <Card className="overflow-hidden border-2">
                       <CardContent className="p-0">
                         <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                          <div className="text-center">
-                            <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/20 flex items-center justify-center">
-                              <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z" />
-                              </svg>
+                          {project.videoEmbed ? (
+                            <div 
+                              className="w-full h-full flex items-center justify-center"
+                              dangerouslySetInnerHTML={{ __html: project.videoEmbed }}
+                            />
+                          ) : (
+                            <div className="text-center">
+                              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/20 flex items-center justify-center">
+                                <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                  <path d="M8 5v14l11-7z" />
+                                </svg>
+                              </div>
+                              <h3 className="text-2xl font-semibold mb-4">{project.projectTitle || project.title}</h3>
+                              <p className="text-muted-foreground mb-6 max-w-md mx-auto">
+                                {project.status === "Concluído" ? "Projeto Finalizado" : project.status === "Em andamento" ? "Em Produção" : project.status === "Em breve" ? "Em breve" : "Disponível para Visualização"}
+                              </p>
+                              <Button variant="outline">
+                                {project.status === "Concluído" ? "Ver Projeto" : project.status === "Em breve" ? "Em breve" : "Preview"}
+                              </Button>
                             </div>
-                            <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
-                            <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-                              {project.status === "Concluído" ? "Projeto Finalizado" : project.status === "Em andamento" ? "Em Produção" : "Disponível para Visualização"}
-                            </p>
-                            <Button variant="outline">
-                              {project.status === "Concluído" ? "Ver Projeto" : "Preview"}
-                            </Button>
-                          </div>
+                          )}
                         </div>
                       </CardContent>
                     </Card>
 
                     <div className="mt-8">
                       <Card className="p-8">
-                        <h3 className="text-2xl font-semibold mb-6">{project.title}</h3>
+                        <h3 className="text-2xl font-semibold mb-6">{project.projectTitle || project.title}</h3>
                         <div className="prose prose-lg mx-auto text-foreground/90 mb-8">
                           <p className="text-lg leading-relaxed">
                             {project.description}
                           </p>
                         </div>
                         
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                          <div className="text-center">
-                            <h4 className="text-lg font-semibold mb-2">Design</h4>
-                            <p className="text-3xl font-bold text-primary">Motion</p>
-                            <p className="text-sm text-muted-foreground">Graphics</p>
-                          </div>
-                          
-                          <div className="text-center">
-                            <h4 className="text-lg font-semibold mb-2">Animação</h4>
-                            <p className="text-3xl font-bold text-primary">2D/3D</p>
-                            <p className="text-sm text-muted-foreground">Híbrida</p>
+                        <div className="flex justify-center">
+                          <div className="text-center bg-primary/10 px-6 py-4 rounded-lg">
+                            <p className="text-sm text-muted-foreground mb-1">Responsável por</p>
+                            <p className="text-lg font-semibold text-primary">{project.responsibility}</p>
                           </div>
                         </div>
                       </Card>
@@ -200,7 +253,7 @@ const Projects = () => {
           {/* Project Counter */}
           <div className="text-center mt-8">
             <p className="text-muted-foreground">
-              {projects.length} projetos no portfólio • Use as setas para navegar
+              11 projetos no portfólio • Use as setas para navegar
             </p>
           </div>
         </div>
