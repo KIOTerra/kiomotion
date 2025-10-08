@@ -191,17 +191,10 @@ const Projects = () => {
                       <CardContent className="p-0">
                         <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
                           {project.videoEmbed ? (
-                            <div className="w-full h-full relative">
-                              <iframe 
-                                className="absolute inset-0 w-full h-full rounded-lg"
-                                src="https://www.youtube.com/embed/SdPs50SSMQ8?si=HIHqZIZcQKTmEYba" 
-                                title="YouTube video player" 
-                                frameBorder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerPolicy="strict-origin-when-cross-origin" 
-                                allowFullScreen
-                              />
-                            </div>
+                            <div 
+                              className="w-full h-full flex items-center justify-center"
+                              dangerouslySetInnerHTML={{ __html: project.videoEmbed }}
+                            />
                           ) : (
                             <div className="text-center">
                               <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/20 flex items-center justify-center">
