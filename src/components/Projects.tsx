@@ -38,6 +38,7 @@ const Projects = () => {
     title: "Unimed",
     description: "Identidade visual em movimento para empresa de tecnologia. Desenvolvimento de logo animado, paleta de cores dinâmica e elementos gráficos que transmitem inovação e modernidade.",
     videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/SdPs50SSMQ8?si=HIHqZIZcQKTmEYba" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/SdPs50SSMQ8/hqdefault.jpg",
     projectTitle: "Explainer corporativo Unimed 2025",
     responsibility: "Direção de arte, design e animação",
     specs: {
@@ -51,6 +52,7 @@ const Projects = () => {
     title: "Campanha Digital Interativa",
     description: "Série de animações para redes sociais focadas em engajamento. Criação de templates modulares, transições suaves e elementos interativos que aumentaram o alcance em 300%.",
     videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/IHPYsGLXPE0?si=EfcLDN78L6xroyIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/IHPYsGLXPE0/hqdefault.jpg",
     projectTitle: "Campanha Digital Interativa",
     responsibility: "Direção de arte e animação",
     specs: {
@@ -64,6 +66,7 @@ const Projects = () => {
     title: "Explainer Video Educacional",
     description: "Vídeo explicativo sobre sustentabilidade corporativa. Combinação de motion graphics, ilustrações customizadas e narração envolvente para comunicar conceitos complexos de forma simples.",
     videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/uVkAL_4C8Q4?si=fd0MmmbYh3WJAqcD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/uVkAL_4C8Q4/hqdefault.jpg",
     projectTitle: "Explainer Video Educacional",
     responsibility: "Direção de arte e animação",
     specs: {
@@ -77,6 +80,7 @@ const Projects = () => {
     title: "Animação 3D Produto",
     description: "Apresentação tridimensional de produto inovador com foco em detalhes técnicos. Modelagem, iluminação e animação realista que destaca as funcionalidades e benefícios do produto.",
     videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/sMaO4vyfO84?si=pa9Z_ioI5-_H-8nh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/sMaO4vyfO84/hqdefault.jpg",
     projectTitle: "Animação 3D Produto",
     responsibility: "Direção de arte e animação",
     specs: {
@@ -90,6 +94,7 @@ const Projects = () => {
     title: "Video Musical Conceitual",
     description: "Clipe musical com estética experimental e narrativa visual poética. Fusão de técnicas tradicionais e digitais para criar uma experiência audiovisual única e memorável.",
     videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/1D67GkrlM7U?si=xQsNkCBitlbS8hJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/1D67GkrlM7U/hqdefault.jpg",
     projectTitle: "Video Musical Conceitual",
     responsibility: "Direção de arte e animação",
     specs: {
@@ -191,12 +196,29 @@ const Projects = () => {
               <div className="flex gap-6 md:gap-8 px-4 bg-[#000a00]/0 rounded-sm mx-0">
                 {projects.map((project, index) => <div key={project.id} className="flex-[0_0_auto]">
                     <button onClick={() => scrollTo(index)} className={`flex flex-col items-center gap-3 group transition-all duration-300 ${selectedIndex === index ? 'scale-110' : 'hover:scale-105 opacity-70 hover:opacity-100'}`}>
-                      <div className={`w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden flex items-center justify-center border-2 transition-all duration-300 ${selectedIndex === index ? 'bg-primary border-primary' : 'bg-gradient-to-br from-primary/20 to-secondary/20 border-border'}`}>
-                        <svg className={`w-8 h-8 md:w-10 md:h-10 transition-all duration-300 ${selectedIndex === index ? 'text-white' : 'text-primary'}`} fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
+                      <div className={`w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden flex items-center justify-center border-2 transition-all duration-300 relative ${selectedIndex === index ? 'border-primary shadow-lg shadow-primary/20' : 'border-border'}`}>
+                        {project.thumbnail ? (
+                          <>
+                            <img 
+                              src={project.thumbnail} 
+                              alt={project.title}
+                              className="w-full h-full object-cover"
+                            />
+                            <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                              <svg className={`w-6 h-6 md:w-8 md:h-8 transition-all duration-300 ${selectedIndex === index ? 'text-white' : 'text-white/80'}`} fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                              </svg>
+                            </div>
+                          </>
+                        ) : (
+                          <div className={`w-full h-full flex items-center justify-center ${selectedIndex === index ? 'bg-primary' : 'bg-gradient-to-br from-primary/20 to-secondary/20'}`}>
+                            <svg className={`w-6 h-6 md:w-8 md:h-8 transition-all duration-300 ${selectedIndex === index ? 'text-white' : 'text-primary'}`} fill="currentColor" viewBox="0 0 24 24">
+                              <path d="M8 5v14l11-7z" />
+                            </svg>
+                          </div>
+                        )}
                       </div>
-                      <p className={`text-sm font-medium text-center max-w-24 leading-tight transition-all duration-300 ${selectedIndex === index ? 'text-primary' : 'text-foreground'}`}>{project.title.split(' ')[0]}</p>
+                      <p className={`text-sm font-medium text-center max-w-20 leading-tight transition-all duration-300 ${selectedIndex === index ? 'text-primary' : 'text-foreground'}`}>{project.title.split(' ')[0]}</p>
                     </button>
                   </div>)}
               </div>
