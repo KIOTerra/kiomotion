@@ -242,13 +242,13 @@ const Projects = () => {
             </div>
 
             {/* Navigation Buttons */}
-            <button className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-background/80 backdrop-blur-sm border border-border hover:bg-background transition-colors flex items-center justify-center z-10" onClick={scrollPrev}>
+            <button className="absolute left-4 top-[28%] -translate-y-1/2 w-12 h-12 rounded-full bg-background/50 backdrop-blur-sm border border-border hover:bg-background transition-colors flex items-center justify-center z-10" onClick={scrollPrev}>
               <svg className="w-6 h-6 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             
-            <button className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-background/80 backdrop-blur-sm border border-border hover:bg-background transition-colors flex items-center justify-center z-10" onClick={scrollNext}>
+            <button className="absolute right-4 top-[28%] -translate-y-1/2 w-12 h-12 rounded-full bg-background/50 backdrop-blur-sm border border-border hover:bg-background transition-colors flex items-center justify-center z-10" onClick={scrollNext}>
               <svg className="w-6 h-6 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
