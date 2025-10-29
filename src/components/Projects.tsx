@@ -172,7 +172,21 @@ const Projects = () => {
           <p className="max-w-3xl mx-auto mb-12 px-0 text-xl text-center font-normal my-[30px] text-gray-900">Dê uma olhada nos meus projetos e descubra como podemos transformar ideias em visuais memoráveis juntos.</p>
           
           {/* Project Thumbnails Carousel */}
-          <div className="max-w-5xl mx-auto mb-12">
+          <div className="max-w-5xl mx-auto mb-12 relative">
+            {/* Left Arrow */}
+            <div className="absolute left-0 top-1/2 -translate-y-1/2 z-10 pointer-events-none">
+              <svg className="w-6 h-6 md:w-8 md:h-8 text-primary/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </div>
+            
+            {/* Right Arrow */}
+            <div className="absolute right-0 top-1/2 -translate-y-1/2 z-10 pointer-events-none">
+              <svg className="w-6 h-6 md:w-8 md:h-8 text-primary/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+            
             <div className="overflow-hidden cursor-grab active:cursor-grabbing py-4" ref={thumbnailsRef}>
               <div className="flex gap-6 md:gap-8 px-4 bg-[#000a00]/0 rounded-sm mx-0">
                 {projects.map((project, index) => <div key={project.id} className="flex-[0_0_auto]">
