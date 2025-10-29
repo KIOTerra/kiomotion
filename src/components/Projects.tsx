@@ -50,6 +50,8 @@ const Projects = () => {
     id: 2,
     title: "Campanha Digital Interativa",
     description: "Série de animações para redes sociais focadas em engajamento. Criação de templates modulares, transições suaves e elementos interativos que aumentaram o alcance em 300%.",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/IHPYsGLXPE0?si=EfcLDN78L6xroyIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    projectTitle: "Campanha Digital Interativa",
     responsibility: "Direção de arte e animação",
     specs: {
       duration: "1:45",
@@ -61,6 +63,8 @@ const Projects = () => {
     id: 3,
     title: "Explainer Video Educacional",
     description: "Vídeo explicativo sobre sustentabilidade corporativa. Combinação de motion graphics, ilustrações customizadas e narração envolvente para comunicar conceitos complexos de forma simples.",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/uVkAL_4C8Q4?si=fd0MmmbYh3WJAqcD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    projectTitle: "Explainer Video Educacional",
     responsibility: "Direção de arte e animação",
     specs: {
       duration: "3:15",
@@ -72,6 +76,8 @@ const Projects = () => {
     id: 4,
     title: "Animação 3D Produto",
     description: "Apresentação tridimensional de produto inovador com foco em detalhes técnicos. Modelagem, iluminação e animação realista que destaca as funcionalidades e benefícios do produto.",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/sMaO4vyfO84?si=pa9Z_ioI5-_H-8nh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    projectTitle: "Animação 3D Produto",
     responsibility: "Direção de arte e animação",
     specs: {
       duration: "2:45",
@@ -83,6 +89,8 @@ const Projects = () => {
     id: 5,
     title: "Video Musical Conceitual",
     description: "Clipe musical com estética experimental e narrativa visual poética. Fusão de técnicas tradicionais e digitais para criar uma experiência audiovisual única e memorável.",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/1D67GkrlM7U?si=xQsNkCBitlbS8hJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    projectTitle: "Video Musical Conceitual",
     responsibility: "Direção de arte e animação",
     specs: {
       duration: "4:20",
@@ -191,17 +199,7 @@ const Projects = () => {
                       <CardContent className="p-0">
                         <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
                           {project.videoEmbed ? (
-                            <div className="w-full h-full relative">
-                              <iframe 
-                                className="absolute inset-0 w-full h-full rounded-lg"
-                                src="https://www.youtube.com/embed/SdPs50SSMQ8?si=HIHqZIZcQKTmEYba" 
-                                title="YouTube video player" 
-                                frameBorder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerPolicy="strict-origin-when-cross-origin" 
-                                allowFullScreen
-                              />
-                            </div>
+                            <div className="w-full h-full relative" dangerouslySetInnerHTML={{ __html: project.videoEmbed.replace('width="560" height="315"', 'class="absolute inset-0 w-full h-full rounded-lg"') }} />
                           ) : (
                             <div className="text-center">
                               <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/20 flex items-center justify-center">
