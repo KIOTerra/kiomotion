@@ -37,8 +37,8 @@ const Projects = () => {
     id: 1,
     title: "Unimed",
     description: "Identidade visual em movimento para empresa de tecnologia. Desenvolvimento de logo animado, paleta de cores dinâmica e elementos gráficos que transmitem inovação e modernidade.",
-    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/SdPs50SSMQ8?si=HIHqZIZcQKTmEYba" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
-    thumbnail: "https://img.youtube.com/vi/SdPs50SSMQ8/hqdefault.jpg",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Ses9tcV7KLo?si=zSTBm8cy7BH31LwP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/Ses9tcV7KLo/hqdefault.jpg",
     projectTitle: "Explainer corporativo Unimed 2025",
     responsibility: "Direção de arte, design e animação",
     specs: {
@@ -51,8 +51,8 @@ const Projects = () => {
     id: 2,
     title: "Campanha Digital Interativa",
     description: "Série de animações para redes sociais focadas em engajamento. Criação de templates modulares, transições suaves e elementos interativos que aumentaram o alcance em 300%.",
-    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/IHPYsGLXPE0?si=EfcLDN78L6xroyIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
-    thumbnail: "https://img.youtube.com/vi/IHPYsGLXPE0/hqdefault.jpg",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/567spXgGO0g?si=Lg_qYhDjfbcxgscZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/567spXgGO0g/hqdefault.jpg",
     projectTitle: "Campanha Digital Interativa",
     responsibility: "Direção de arte e animação",
     specs: {
@@ -65,8 +65,8 @@ const Projects = () => {
     id: 3,
     title: "Explainer Video Educacional",
     description: "Vídeo explicativo sobre sustentabilidade corporativa. Combinação de motion graphics, ilustrações customizadas e narração envolvente para comunicar conceitos complexos de forma simples.",
-    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/uVkAL_4C8Q4?si=fd0MmmbYh3WJAqcD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
-    thumbnail: "https://img.youtube.com/vi/uVkAL_4C8Q4/hqdefault.jpg",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Q-GPo-FDmXM?si=ugtQDcTcfV65mJSz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/Q-GPo-FDmXM/hqdefault.jpg",
     projectTitle: "Explainer Video Educacional",
     responsibility: "Direção de arte e animação",
     specs: {
@@ -79,8 +79,8 @@ const Projects = () => {
     id: 4,
     title: "Animação 3D Produto",
     description: "Apresentação tridimensional de produto inovador com foco em detalhes técnicos. Modelagem, iluminação e animação realista que destaca as funcionalidades e benefícios do produto.",
-    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/sMaO4vyfO84?si=pa9Z_ioI5-_H-8nh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
-    thumbnail: "https://img.youtube.com/vi/sMaO4vyfO84/hqdefault.jpg",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/2VS959gI3Sc?si=p2YX3eEv67WDAaCj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/2VS959gI3Sc/hqdefault.jpg",
     projectTitle: "Animação 3D Produto",
     responsibility: "Direção de arte e animação",
     specs: {
@@ -93,8 +93,8 @@ const Projects = () => {
     id: 5,
     title: "Video Musical Conceitual",
     description: "Clipe musical com estética experimental e narrativa visual poética. Fusão de técnicas tradicionais e digitais para criar uma experiência audiovisual única e memorável.",
-    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/1D67GkrlM7U?si=xQsNkCBitlbS8hJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
-    thumbnail: "https://img.youtube.com/vi/1D67GkrlM7U/hqdefault.jpg",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/PX9IZCLv_LA?si=zbM2YcWzoXR7RTy3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/PX9IZCLv_LA/hqdefault.jpg",
     projectTitle: "Video Musical Conceitual",
     responsibility: "Direção de arte e animação",
     specs: {
@@ -179,14 +179,14 @@ const Projects = () => {
           {/* Project Thumbnails Carousel */}
           <div className="max-w-5xl mx-auto mb-12 relative">
             {/* Left Arrow */}
-            <div className="absolute left-0 top-1/2 -translate-y-1/2 z-10 pointer-events-none">
+            <div className="absolute -left-8 top-1/2 -translate-y-1/2 z-10 pointer-events-none">
               <svg className="w-6 h-6 md:w-8 md:h-8 text-primary/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </div>
             
             {/* Right Arrow */}
-            <div className="absolute right-0 top-1/2 -translate-y-1/2 z-10 pointer-events-none">
+            <div className="absolute -right-8 top-1/2 -translate-y-1/2 z-10 pointer-events-none">
               <svg className="w-6 h-6 md:w-8 md:h-8 text-primary/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -196,7 +196,7 @@ const Projects = () => {
               <div className="flex gap-6 md:gap-8 px-4 bg-[#000a00]/0 rounded-sm mx-0">
                 {projects.map((project, index) => <div key={project.id} className="flex-[0_0_auto]">
                     <button onClick={() => scrollTo(index)} className={`flex flex-col items-center gap-3 group transition-all duration-300 ${selectedIndex === index ? 'scale-110' : 'hover:scale-105 opacity-70 hover:opacity-100'}`}>
-                      <div className={`w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden flex items-center justify-center border-2 transition-all duration-300 relative ${selectedIndex === index ? 'border-primary shadow-lg shadow-primary/20' : 'border-border'}`}>
+                      <div className={`w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden flex items-center justify-center border-2 transition-all duration-300 relative ${selectedIndex === index ? 'border-primary shadow-lg shadow-primary/20' : 'border-border'}`}>
                         {project.thumbnail ? (
                           <>
                             <img 
