@@ -215,20 +215,32 @@ const Projects = () => {
                               className="w-full h-full object-cover"
                             />
                             <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                              <img 
-                                src="/lovable-uploads/Logo_total_2_alpha.png" 
-                                alt="Play"
-                                className={`transition-all duration-300 ${selectedIndex === index ? 'w-8 h-8 md:w-10 md:h-10' : 'w-6 h-6 md:w-8 md:h-8'}`}
-                              />
+                              {selectedIndex === index ? (
+                                <img 
+                                  src="/lovable-uploads/Logo_2_Alpha.png" 
+                                  alt="Selected"
+                                  className="w-8 h-8 md:w-10 md:h-10 transition-all duration-300"
+                                />
+                              ) : (
+                                <svg className="w-6 h-6 md:w-8 md:h-8 text-white/80 transition-all duration-300" fill="currentColor" viewBox="0 0 24 24">
+                                  <path d="M8 5v14l11-7z" />
+                                </svg>
+                              )}
                             </div>
                           </>
                         ) : (
                           <div className={`w-full h-full flex items-center justify-center ${selectedIndex === index ? 'bg-primary' : 'bg-gradient-to-br from-primary/20 to-secondary/20'}`}>
-                            <img 
-                              src="/lovable-uploads/Logo_total_2_alpha.png" 
-                              alt="Play"
-                              className={`transition-all duration-300 ${selectedIndex === index ? 'w-8 h-8 md:w-10 md:h-10' : 'w-6 h-6 md:w-8 md:h-8'}`}
-                            />
+                            {selectedIndex === index ? (
+                              <img 
+                                src="/lovable-uploads/Logo_2_Alpha.png" 
+                                alt="Selected"
+                                className="w-8 h-8 md:w-10 md:h-10 transition-all duration-300"
+                              />
+                            ) : (
+                              <svg className="w-6 h-6 md:w-8 md:h-8 text-primary transition-all duration-300" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                              </svg>
+                            )}
                           </div>
                         )}
                       </div>
