@@ -205,8 +205,8 @@ const Projects = () => {
             <div className="overflow-hidden cursor-grab active:cursor-grabbing py-4" ref={thumbnailsRef}>
               <div className="flex gap-6 md:gap-8 px-4 bg-[#000a00]/0 rounded-sm mx-0">
                 {projects.map((project, index) => <div key={project.id} className="flex-[0_0_auto]">
-                    <button onClick={() => scrollTo(index)} className={`flex flex-col items-center gap-3 group transition-all duration-300 ${selectedIndex === index ? 'scale-110' : 'hover:scale-105 opacity-70 hover:opacity-100'}`}>
-                      <div className={`w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden flex items-center justify-center border-2 transition-all duration-300 relative ${selectedIndex === index ? 'border-primary shadow-lg shadow-primary/20' : 'border-border'}`}>
+                    <button onClick={() => scrollTo(index)} className={`flex flex-col items-center gap-3 group transition-all duration-300 ${selectedIndex === index ? 'scale-125' : 'hover:scale-105 opacity-70 hover:opacity-100'}`}>
+                      <div className={`rounded-full overflow-hidden flex items-center justify-center border-2 transition-all duration-300 relative ${selectedIndex === index ? 'w-16 h-16 md:w-20 md:h-20 border-primary shadow-lg shadow-primary/20' : 'w-12 h-12 md:w-16 md:h-16 border-border'}`}>
                         {project.thumbnail ? (
                           <>
                             <img 
@@ -215,16 +215,20 @@ const Projects = () => {
                               className="w-full h-full object-cover"
                             />
                             <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-                              <svg className={`w-6 h-6 md:w-8 md:h-8 transition-all duration-300 ${selectedIndex === index ? 'text-white' : 'text-white/80'}`} fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z" />
-                              </svg>
+                              <img 
+                                src="/lovable-uploads/Logo_total_2_alpha.png" 
+                                alt="Play"
+                                className={`transition-all duration-300 ${selectedIndex === index ? 'w-8 h-8 md:w-10 md:h-10' : 'w-6 h-6 md:w-8 md:h-8'}`}
+                              />
                             </div>
                           </>
                         ) : (
                           <div className={`w-full h-full flex items-center justify-center ${selectedIndex === index ? 'bg-primary' : 'bg-gradient-to-br from-primary/20 to-secondary/20'}`}>
-                            <svg className={`w-6 h-6 md:w-8 md:h-8 transition-all duration-300 ${selectedIndex === index ? 'text-white' : 'text-primary'}`} fill="currentColor" viewBox="0 0 24 24">
-                              <path d="M8 5v14l11-7z" />
-                            </svg>
+                            <img 
+                              src="/lovable-uploads/Logo_total_2_alpha.png" 
+                              alt="Play"
+                              className={`transition-all duration-300 ${selectedIndex === index ? 'w-8 h-8 md:w-10 md:h-10' : 'w-6 h-6 md:w-8 md:h-8'}`}
+                            />
                           </div>
                         )}
                       </div>
