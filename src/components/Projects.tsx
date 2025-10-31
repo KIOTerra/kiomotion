@@ -107,6 +107,8 @@ const Projects = () => {
     id: 6,
     title: "Apresentação Institucional",
     description: "Vídeo corporativo para lançamento de nova filial. Combinação de filmagem real com elementos gráficos animados, criando uma narrativa envolvente sobre a expansão da empresa.",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/SdPs50SSMQ8?si=HIHqZIZcQKTmEYba" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/SdPs50SSMQ8/hqdefault.jpg",
     responsibility: "Direção de arte e animação",
     specs: {
       duration: "3:50",
@@ -118,6 +120,8 @@ const Projects = () => {
     id: 7,
     title: "Short Form Content",
     description: "Série de vídeos verticais para TikTok e Instagram Reels. Conteúdo dinâmico com transições rápidas, efeitos visuais impactantes e storytelling adaptado para formato mobile.",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/IHPYsGLXPE0?si=EfcLDN78L6xroyIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/IHPYsGLXPE0/hqdefault.jpg",
     responsibility: "Direção de arte e animação",
     specs: {
       duration: "0:45",
@@ -129,6 +133,8 @@ const Projects = () => {
     id: 8,
     title: "Projeto 8",
     description: "Descrição do projeto 8 será adicionada em breve.",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/uVkAL_4C8Q4?si=fd0MmmbYh3WJAqcD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/uVkAL_4C8Q4/hqdefault.jpg",
     responsibility: "Direção de arte e animação",
     specs: {
       duration: "2:00",
@@ -140,6 +146,8 @@ const Projects = () => {
     id: 9,
     title: "Projeto 9",
     description: "Descrição do projeto 9 será adicionada em breve.",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/sMaO4vyfO84?si=pa9Z_ioI5-_H-8nh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/sMaO4vyfO84/hqdefault.jpg",
     responsibility: "Direção de arte e animação",
     specs: {
       duration: "2:00",
@@ -151,6 +159,8 @@ const Projects = () => {
     id: 10,
     title: "Projeto 10",
     description: "Descrição do projeto 10 será adicionada em breve.",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/1D67GkrlM7U?si=xQsNkCBitlbS8hJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/1D67GkrlM7U/hqdefault.jpg",
     responsibility: "Direção de arte e animação",
     specs: {
       duration: "2:00",
