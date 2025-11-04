@@ -218,10 +218,10 @@ const Projects = () => {
             </div>
             
             <div className="overflow-hidden cursor-grab active:cursor-grabbing py-4" ref={thumbnailsRef}>
-              <div className="flex gap-6 md:gap-8 px-4 bg-[#000a00]/0 rounded-sm mx-0">
+              <div className="flex gap-3 md:gap-4 px-4 bg-[#000a00]/0 rounded-sm mx-0">
                 {projects.map((project, index) => <div key={project.id} className="flex-[0_0_auto]">
                     <button onClick={() => scrollTo(index)} className={`flex flex-col items-center gap-3 group transition-all duration-300 ${selectedIndex === index ? 'scale-125' : 'hover:scale-105 opacity-70 hover:opacity-100'}`}>
-                      <div className={`rounded-lg overflow-hidden flex items-center justify-center border-2 transition-all duration-300 relative ${selectedIndex === index ? 'w-16 h-16 md:w-20 md:h-20 border-primary shadow-lg shadow-primary/20' : 'w-12 h-12 md:w-16 md:h-16 border-border'}`}>
+                      <div className={`rounded-lg overflow-hidden flex items-center justify-center border-2 transition-all duration-300 relative ${selectedIndex === index ? 'w-20 h-20 md:w-28 md:h-28 border-primary shadow-lg shadow-primary/20' : 'w-16 h-16 md:w-20 md:h-20 border-border'}`}>
                         {project.thumbnail ? (
                           <>
                             <img 
@@ -234,10 +234,10 @@ const Projects = () => {
                                 <img 
                                   src="/lovable-uploads/Logo_2_Alpha.png" 
                                   alt="Selected"
-                                  className="w-8 h-8 md:w-10 md:h-10 transition-all duration-300"
+                                  className="w-12 h-12 md:w-16 md:h-16 transition-all duration-300"
                                 />
                               ) : (
-                                <svg className="w-6 h-6 md:w-8 md:h-8 text-white/80 transition-all duration-300" fill="currentColor" viewBox="0 0 24 24">
+                                <svg className="w-8 h-8 md:w-12 md:h-12 text-white/80 transition-all duration-300" fill="currentColor" viewBox="0 0 24 24">
                                   <path d="M8 5v14l11-7z" />
                                 </svg>
                               )}
@@ -249,10 +249,10 @@ const Projects = () => {
                               <img 
                                 src="/lovable-uploads/Logo_2_Alpha.png" 
                                 alt="Selected"
-                                className="w-8 h-8 md:w-10 md:h-10 transition-all duration-300"
+                                className="w-12 h-12 md:w-16 md:h-16 transition-all duration-300"
                               />
                             ) : (
-                              <svg className="w-6 h-6 md:w-8 md:h-8 text-primary transition-all duration-300" fill="currentColor" viewBox="0 0 24 24">
+                              <svg className="w-8 h-8 md:w-12 md:h-12 text-primary transition-all duration-300" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M8 5v14l11-7z" />
                               </svg>
                             )}
