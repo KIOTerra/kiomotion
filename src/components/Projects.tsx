@@ -159,8 +159,8 @@ const Projects = () => {
     id: 10,
     title: "Projeto 10",
     description: "Descrição do projeto 10 será adicionada em breve.",
-    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Uws7ghWBHr0?si=j6iMe8-Qt1lDwZ6i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
-    thumbnail: "https://img.youtube.com/vi/Uws7ghWBHr0/hqdefault.jpg",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/1D67GkrlM7U?si=xQsNkCBitlbS8hJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/1D67GkrlM7U/hqdefault.jpg",
     responsibility: "Direção de arte e animação",
     specs: {
       duration: "2:00",
@@ -174,6 +174,19 @@ const Projects = () => {
     description: "Descrição do projeto 11 será adicionada em breve.",
     videoEmbed: '<iframe src="https://www.behance.net/embed/project/197731175?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>',
     thumbnail: "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/197731175.66ea5c10c4bc1.jpg",
+    responsibility: "Direção de arte e animação",
+    specs: {
+      duration: "2:00",
+      resolution: "4K",
+      fps: "30"
+    },
+    status: "Concluído"
+  }, {
+    id: 12,
+    title: "Projeto 12",
+    description: "Descrição do projeto 12 será adicionada em breve.",
+    videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Uws7ghWBHr0?si=j6iMe8-Qt1lDwZ6i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    thumbnail: "https://img.youtube.com/vi/Uws7ghWBHr0/hqdefault.jpg",
     responsibility: "Direção de arte e animação",
     specs: {
       duration: "2:00",
@@ -322,7 +335,7 @@ const Projects = () => {
           {/* Project Counter */}
           <div className="text-center mt-8">
             <p className="text-muted-foreground">
-              11 projetos no portfólio • Use as setas para navegar
+              12 projetos no portfólio • Use as setas para navegar
             </p>
           </div>
         </div>
