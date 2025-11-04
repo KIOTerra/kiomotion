@@ -227,7 +227,7 @@ const Projects = () => {
                             <img 
                               src={project.thumbnail} 
                               alt={project.title}
-                              className="absolute inset-0 w-full h-full object-cover"
+                              className="absolute inset-0 w-full h-full object-cover scale-110"
                             />
                             <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                               {selectedIndex === index ? (
