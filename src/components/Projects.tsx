@@ -221,7 +221,7 @@ const Projects = () => {
               <div className="flex gap-6 md:gap-8 px-4 bg-[#000a00]/0 rounded-sm mx-0">
                 {projects.map((project, index) => <div key={project.id} className="flex-[0_0_auto]">
                     <button onClick={() => scrollTo(index)} className={`flex flex-col items-center gap-3 group transition-all duration-300 ${selectedIndex === index ? 'scale-125' : 'hover:scale-105 opacity-70 hover:opacity-100'}`}>
-                      <div className={`rounded-full overflow-hidden flex items-center justify-center border-2 transition-all duration-300 relative ${selectedIndex === index ? 'w-16 h-16 md:w-20 md:h-20 border-primary shadow-lg shadow-primary/20' : 'w-12 h-12 md:w-16 md:h-16 border-border'}`}>
+                      <div className={`rounded-lg overflow-hidden flex items-center justify-center border-2 transition-all duration-300 relative ${selectedIndex === index ? 'w-16 h-16 md:w-20 md:h-20 border-primary shadow-lg shadow-primary/20' : 'w-12 h-12 md:w-16 md:h-16 border-border'}`}>
                         {project.thumbnail ? (
                           <>
                             <img 
