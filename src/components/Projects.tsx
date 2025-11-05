@@ -169,19 +169,6 @@ const Projects = () => {
     },
     status: "Concluído"
   }, {
-    id: 11,
-    title: "Projeto 11",
-    description: "Descrição do projeto 11 será adicionada em breve.",
-    videoEmbed: '<iframe src="https://www.behance.net/embed/project/197731175?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>',
-    thumbnail: "https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/197731175.66ea5c10c4bc1.jpg",
-    responsibility: "Direção de arte e animação",
-    specs: {
-      duration: "2:00",
-      resolution: "4K",
-      fps: "30"
-    },
-    status: "Concluído"
-  }, {
     id: 12,
     title: "Projeto 12",
     description: "Descrição do projeto 12 será adicionada em breve.",
