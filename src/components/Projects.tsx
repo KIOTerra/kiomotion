@@ -91,7 +91,7 @@ const Projects = () => {
     status: "Concluído"
   }, {
     id: 5,
-    title: "Explainer Musical Conceitual",
+    title: "MTV Musical Conceitual",
     description: "Clipe musical com estética experimental e narrativa visual poética. Fusão de técnicas tradicionais e digitais para criar uma experiência audiovisual única e memorável.",
     videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/PX9IZCLv_LA?si=zbM2YcWzoXR7RTy3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
     thumbnail: "https://img.youtube.com/vi/PX9IZCLv_LA/hqdefault.jpg",
