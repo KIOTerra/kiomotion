@@ -184,7 +184,7 @@ const Projects = () => {
   }];
   return <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16 my-0 px-0">
+        <div className="text-center mb-24 px-0">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">Projetos</h2>
           <p className="max-w-3xl mx-auto mb-12 px-0 text-xl text-center font-normal my-[30px] text-gray-900">Dê uma olhada nos meus projetos e descubra como podemos transformar ideias em visuais memoráveis juntos.</p>
           
