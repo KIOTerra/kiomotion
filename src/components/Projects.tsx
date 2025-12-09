@@ -77,7 +77,7 @@ const Projects = () => {
     status: "Finalizado"
   }, {
     id: 4,
-    title: "Animação 3D Produto",
+    title: "Colagem 3D Produto",
     description: "Apresentação tridimensional de produto inovador com foco em detalhes técnicos. Modelagem, iluminação e animação realista que destaca as funcionalidades e benefícios do produto.",
     videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/2VS959gI3Sc?si=p2YX3eEv67WDAaCj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
     thumbnail: "https://img.youtube.com/vi/2VS959gI3Sc/hqdefault.jpg",
