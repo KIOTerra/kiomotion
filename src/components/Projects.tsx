@@ -131,7 +131,7 @@ const Projects = () => {
     status: "Concluído"
   }, {
     id: 8,
-    title: "Projeto 8",
+    title: "IA Colagem",
     description: "Descrição do projeto 8 será adicionada em breve.",
     videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/uVkAL_4C8Q4?si=fd0MmmbYh3WJAqcD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
     thumbnail: "https://img.youtube.com/vi/uVkAL_4C8Q4/hqdefault.jpg",
