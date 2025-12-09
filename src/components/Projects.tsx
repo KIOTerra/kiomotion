@@ -39,7 +39,7 @@ const Projects = () => {
     description: "Identidade visual em movimento para empresa de tecnologia. Desenvolvimento de logo animado, paleta de cores dinâmica e elementos gráficos que transmitem inovação e modernidade.",
     videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Ses9tcV7KLo?si=zSTBm8cy7BH31LwP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
     thumbnail: "https://img.youtube.com/vi/Ses9tcV7KLo/hqdefault.jpg",
-    projectTitle: "Explainer corporativo Unimed 2025",
+    projectTitle: "Explainer video Unimed",
     responsibility: "Direção de arte, design e animação",
     specs: {
       duration: "2:30",
