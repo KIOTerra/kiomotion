@@ -63,7 +63,7 @@ const Projects = () => {
     status: "Em andamento"
   }, {
     id: 3,
-    title: "Explainer Video Educacional",
+    title: "MTV Video Educacional",
     description: "Vídeo explicativo sobre sustentabilidade corporativa. Combinação de motion graphics, ilustrações customizadas e narração envolvente para comunicar conceitos complexos de forma simples.",
     videoEmbed: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Q-GPo-FDmXM?si=ugtQDcTcfV65mJSz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
     thumbnail: "https://img.youtube.com/vi/Q-GPo-FDmXM/hqdefault.jpg",
